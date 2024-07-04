@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>We are learning DOM</h1>
+    <p id="id">this is paragraph</p>
+    <ul id="list">
+        <li>gift-1</li>
+        <li>gift-2</li>
+        <li>gift-3</li>
+    </ul>
+    <script>
+        
+        var id=document.getElementById('list');
+        const add=document.createElement('li');
+        add.innerHTML='new gift';
+        id.appendChild(add);
+        
+
+    </script>
+    
+</body>
+</html>
