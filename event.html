@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <button onclick="handleClick()">Click Me</button>
+    <p id="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis.</p>
+    <script>
+        function handleClick(){
+            alert("clicked already!!");
+        }
+        var item=document.getElementById('par');
+        item.addEventListener('mouseover',function(){
+            document.body.style.backgroundColor="green";
+        })
+    </script>
+</body>
+</html>
